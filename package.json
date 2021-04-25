@@ -1,0 +1,18 @@
+{
+  "name": "petri-net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/xml2js": "^0.4.8",
+    "typescript": "^4.2.4",
+    "xml2js": "^0.4.23"
+  }
+}
