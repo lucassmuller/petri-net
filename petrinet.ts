@@ -40,6 +40,9 @@ export class PetriNet {
     outputs.forEach(({ place, multiplicity }) => this.places[place].tokens += multiplicity)
 
     this.transitionCallback?.(transition)
+
+    // Executa transição novamente, para caso continue ativa
+    this.executeTransition(transition)
   }
 
   private getNewTokensAmount(type: InputType, multiplicity: number, tokens: number) {
