@@ -11,8 +11,8 @@ const inhibitor: ArcType = {
 }
 
 const reset: ArcType = {
-  getNewTokensAmount: (_, __) => 0,
-  hasNecessaryTokens: (multiplicity, tokens) => tokens >= multiplicity
+  getNewTokensAmount: () => 0,
+  hasNecessaryTokens: () => true
 }
 
 const arcTypes = {
